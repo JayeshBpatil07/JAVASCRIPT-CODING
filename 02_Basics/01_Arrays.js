@@ -1,6 +1,7 @@
 //simple form to declare array
 const myArr = [5,6,"jayesh",55,78]
 console.log(myArr);
+console.log(myArr.sort());
 
 //new form of array declartion
 
@@ -40,3 +41,22 @@ console.log(arry1);
 let popvalue = arry1.pop('patil')
 console.log(popvalue)
 console.log(arry1); //for checking original changes run original variable
+
+
+
+//using flat method
+const anotherArry = [4,5,6,7,9,[57,1,8,3,[5,55],78],789]
+console.log(anotherArry.flat(Infinity));   //it converts all the data into the separate form spread the elements separately
+
+console.log(Array.isArray(anotherArry));  //for checking is it array or not
+
+
+
+let extra_array = [{
+    name:'Jayesh',
+    email: "jay@123",
+    password:'456'
+}
+]
+console.log(Array.isArray(extra_array));
+console.log(extra_array.includes);
